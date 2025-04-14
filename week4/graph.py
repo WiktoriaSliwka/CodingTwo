@@ -1,7 +1,7 @@
 class Graph:
 	def __init__(self, vertices, edges):
-		self.vertices = set(vertices)
-		self.edges = set(edges)
+		self.vertices = set(vertices)  # this passes fine as its singular
+		self.edges = set(edges)   # uses dictionary key in set but it has to hashable thats why there is an error
 
 		# Adjacency list
 		self.adjacency_list = {}

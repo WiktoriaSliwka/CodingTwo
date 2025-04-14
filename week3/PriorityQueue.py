@@ -16,6 +16,7 @@ class PriorityQueue:
 
 	def add(self, data):
 		self.storage.append(data)
+	
 
 	def peek(self):
 		if not self.storage:
@@ -37,11 +38,6 @@ queue_data = [
 	("Jane", 2),
 	("Alex", 3),
 ]
+
 queue = PriorityQueue(queue_data)
-# queue.add(("Jimmy Neutron", 2))
-# print(queue.get())
-# print(queue.get())
-# # queue.print_queue
-# print(queue.get())
-# print(queue.get())
-print(queue)
+queue.print_queue
